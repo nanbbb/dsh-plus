@@ -1,0 +1,4 @@
+# dsh-plus bundle patch：挂载 host 服务
+- insert:
+    - id: dsh-plus
+      name: 'dsh-plus'

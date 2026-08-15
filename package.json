@@ -1,0 +1,25 @@
+{
+  "name": "dsh-plus",
+  "version": "0.1.0",
+  "description": "DSH 增强插件：视觉/记忆设置面板 + 插件市场（+ 后续挂机游戏）",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "cordis.patch.yml"],
+  "dsh": {
+    "client": {
+      "inject": ["slots", "locale"],
+      "platform": "web"
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "dependencies": {
+    "js-yaml": "^4.2.0"
+  }
+}
